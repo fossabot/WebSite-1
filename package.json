@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "lint": "eslint ./src",
-    "test": "mocha test/**/*.spec.js"
+    "test": "mocha test/**/*.spec.js",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha --include-all-sources -- -R min \"test/unit/**/*.spec.js\""
   },
   "dependencies": {
     "body-parser": "~1.18.1",
