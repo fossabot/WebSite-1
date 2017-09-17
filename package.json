@@ -7,12 +7,9 @@
 		"lint": "eslint -f stylish ./src ./bin ./test",
 		"test": "mocha test/**/*.spec.js",
 		"lint:xml": "eslint -f checkstyle -o lint.xml ./src ./bin ./test",
-		"test:xml":
-			"mocha test/**/*.spec.js -R xunit --reporter-options output=test.xml",
-		"coverage":
-			"istanbul cover node_modules/mocha/bin/_mocha --include-all-sources -- -R min \"test/unit/**/*.spec.js\"",
-		"coverage:xml":
-			"istanbul cover node_modules/mocha/bin/_mocha --include-all-sources -report cobertura -- -R min \"test/unit/**/*.spec.js\""
+		"test:xml": "mocha test/**/*.spec.js -R xunit --reporter-options output=test.xml",
+		"coverage": "istanbul cover node_modules/mocha/bin/_mocha --include-all-sources -- -R min \"test/unit/**/*.spec.js\"",
+		"coverage:xml": "istanbul cover node_modules/mocha/bin/_mocha --include-all-sources -report cobertura -- -R min \"test/unit/**/*.spec.js\""
 	},
 	"dependencies": {
 		"body-parser": "~1.18.1",
@@ -25,10 +22,9 @@
 		"stylus": "0.54.5"
 	},
 	"devDependencies": {
-		"mocha": "^3.5.3",
 		"chai": "^4.1.2",
-		"depcheck": "^0.6.7",
-		"eslint": "^4.7.0"
+		"eslint": "^4.7.0",
+		"mocha": "^3.5.3"
 	},
 	"main": "bin/www.js",
 	"repository": "https://github.com/OpenGneu/WebSite.git",
