@@ -7,7 +7,6 @@ This is *most of* the source for gneu.org. Please feel free to do with it as you
 | master  | develop |
 | ------------- | ------------- |
 | [![Build Status](https://travis-ci.org/OpenGneu/WebSite.svg?branch=master)](https://travis-ci.org/OpenGneu/WebSite)  | [![Build Status](https://travis-ci.org/OpenGneu/WebSite.svg?branch=develop)](https://travis-ci.org/OpenGneu/WebSite)  |
-| [![dependencies Status](https://david-dm.org/OpenGneu/WebSite/status.svg)](https://david-dm.org/OpenGneu/WebSite) | |
 
 ## Setup & Configuration
 
