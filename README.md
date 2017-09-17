@@ -7,3 +7,7 @@ This is *most of* the source for gneu.org. Please feel free to do with it as you
 1. Check out the project to a convenient directory.
 2. run `yarn`
 3. run `yarn start` 
+
+## License
+
+MIT License
