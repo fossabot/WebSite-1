@@ -1,21 +1,19 @@
-(() => {
-	"use strict";
+"use strict";
 
-	let API = {
-		normalizePort: function(port) {
-			let parsedPort = parseInt(port);
-			
-			if (!parsedPort) {
-				return port;
-			}
+let API = {
+	normalizePort: function(port) {
+		let parsedPort = parseInt(port);
 
-			if (parsedPort < 0) {
-				return false;
-			}
-
-			return parsedPort;
+		if (!parsedPort) {
+			return port;
 		}
-	};
 
-	module.exports = API;
-})();
+		if (parsedPort < 0) {
+			return false;
+		}
+
+		return parsedPort;
+	}
+};
+
+module.exports = API;
