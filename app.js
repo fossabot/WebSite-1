@@ -6,16 +6,15 @@ var cookieParser = require("cookie-parser");
 var bodyParser = require("body-parser");
 var nunjucks = require("nunjucks");
 
-var index = require("./routes/index");
-var users = require("./routes/users");
+var index = require("./src/routes/index");
+var users = require("./src/routes/users");
 
 var app = express();
 
 // view engine setup
-app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "html");
 
-nunjucks.configure('views', {
+nunjucks.configure('src/views', {
     autoescape: true,
     express: app,
     watch: true
